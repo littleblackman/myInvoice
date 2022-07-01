@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content"Application de création de factures"/>
+    <title>MyInvoice</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+
+
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    
+</head>
+<body>
+    <header>
+        <div id="topInformation">
+            <div id="ownerInformations">
+                <img src="assets/img/hand.jpg" alt="image de ma main"/>
+                <div>
+                    <h2>Sandy Razafitrimo</h2>
+                    1 rue des Bosquets,<br/>
+                    92140 Clamart<br/>
+                   
+                </div>
+
+            </div>
+            <div id="customerInformations">
+                <h2>Sophie Moreau</h2>
+                15 rue de la Tour<br/>
+                75001 PARIS<br/>
+            </div>
+        </div>
+        <div id="invoice-details">
+            <h2>Facture</h2>
+            <ul>
+                <li>
+                    <div>Numéro de facture:</div>
+                    <div>20020306-03</div>
+                </li>
+                <li>
+                    <div>Date de facture:</div>
+                    <div>10/02/2022</div>
+                </li>
+                <li>
+                    <div>Date d'échéance:</div>
+                    <div>22/02/2002</div>
+                </li>
+                <li class="toPay">
+                    <div>A Payer EURO</div>
+                    <div>569.23</div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+
+        <table id="tableInvoice">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Qtté</th>
+                    <th>Unité</th>
+                    <th>Tarif U</th>
+                    <th>Montant</th>
+                </tr>
+            </thead>
+           
+            <tbody>
+                <tr>
+                    <td class="description">
+                        Baba au rhum
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        Pièce
+                    </td>
+                    <td>
+                        89.00
+                    </td>
+                    <td>
+                        89.00
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="description">
+                        Préparation
+                    </td>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        heures
+                    </td>
+                    <td>
+                        45
+                    </td>
+                    <td>
+                        135
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="description">
+                        Livraison
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        Pièce
+                    </td>
+                    <td>
+                        00.00
+                    </td>
+                    <td>
+                        .00
+                    </td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td colspan="4" id="totalAmount">
+                        <span>
+                            Montant Total TTC :
+                        </span>
+                        <span>
+                            222.00
+                        </span> 
+                    </td>
+                </tr>
+            </tfoot>
+           
+
+           
+            
+        </table>
+
+    </main>
+</body>
+</html>

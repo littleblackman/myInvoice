@@ -1,0 +1,130 @@
+/**
+ * PARAMETRES GENERAUX
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+ * {
+    box-sizing: border-box;
+ }
+
+ :root {
+     --main-bg-color: lightcoral;;
+ }
+html { background-color: lightgray;}
+body {  max-width: 1000px;
+        background-color: white;
+        margin: 0 auto; 
+        min-height: 100vh;
+        font-family: 'Roboto Mono', monospace;
+        padding: 20px;
+        font-size: 1rem;
+}
+h1, h2, ul, li { padding: 0; margin: 0;}
+h2 { font-size: 1.3rem;}
+
+ul { list-style-type: none;}
+
+.minuscule {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+/** HAUT DE LA PAGE **/  
+#topInformation { 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#topInformation div {
+    min-width: 200px;
+    max-width: 400px;
+}
+#ownerInformations { 
+    text-align: left;
+    display: flex;
+}
+
+#ownerInformations img {
+    border-radius: 150px;
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+
+#customerInformations {
+     font-size: 0.9rem;
+}
+
+
+#invoice-details {
+    margin-top: 60px;
+    max-width: 50%;
+    min-width: 300px;
+}
+
+#invoice-details h2 {
+    border-bottom: 1px solid black
+}
+
+#invoice-details li {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    padding: 0 10px;
+}
+
+#invoice-details .toPay {
+    background-color: var(--main-bg-color);
+    line-height: 1.9rem;
+    font-weight: 700;
+
+}
+
+
+/** MAIN**/
+main {
+    padding-top: 60px;
+}
+
+#tableInvoice {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#tableInvoice th {
+    background-color: var(--main-bg-color);
+    text-align: center;
+}
+
+#tableInvoice td {
+    text-align: right;
+    padding: 4px;
+    border: 1px solid lightgrey;
+}
+
+#tableInvoice .description {
+    width: 50%;
+    text-align: left;
+}
+
+#tableInvoice tfoot td {
+    border: 0px solid white;
+}
+
+#tableInvoice #totalAmount {
+    font-weight: bold;
+    background-color: var(--main-bg-color);
+        border: 1px solid lightgrey;
+}
+
+#tableInvoice #totalAmount span:first-child {
+    margin-right: 40px;
+}
+
+#tableInvoice tbody tr:nth-child(even) {
+    background-color: lightgrey;
+}
